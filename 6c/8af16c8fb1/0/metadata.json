@@ -1,0 +1,20 @@
+{
+  "cli_version": "dev",
+  "checkpoint_id": "6c8af16c8fb1",
+  "session_id": "b7415108-5b69-409e-933e-2be0e1043d5f",
+  "strategy": "auto-commit",
+  "created_at": "2026-02-17T16:51:04.634311448Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "README.md"
+  ],
+  "agent": "Claude Code",
+  "token_usage": {
+    "input_tokens": 76,
+    "cache_creation_tokens": 21686,
+    "cache_read_tokens": 77140,
+    "output_tokens": 1873,
+    "api_call_count": 5
+  }
+}
