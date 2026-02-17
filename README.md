@@ -1,8 +1,8 @@
 # btmsp2table
 
-Extract main spectrum table from Bruker's MALDI Biotyper `.btmsp` file.
+Extract the main spectrum table from Bruker's MALDI Biotyper `.btmsp` files.
 
-> **Note:** The core extraction logic is not yet implemented. This package currently provides the project structure and public API surface.
+> **Note:** The core extraction logic is not yet implemented. Contributions are welcome.
 
 ## Installation
 
@@ -12,7 +12,7 @@ Requires Python >= 3.12.
 pip install btmsp2table
 ```
 
-Or using [uv](https://docs.astral.sh/uv/):
+Or with [uv](https://docs.astral.sh/uv/):
 
 ```bash
 uv pip install btmsp2table
@@ -31,7 +31,7 @@ uv pip install .
 ### Command-line interface
 
 ```bash
-btmsp2table /path/to/file.btmsp
+btmsp2table path/to/file.btmsp
 ```
 
 ### Python API
@@ -42,11 +42,13 @@ from btmsp2table import extract_spectrum_table
 result = extract_spectrum_table("path/to/file.btmsp")
 ```
 
+An example `.btmsp` file is included under [`examples/`](examples/).
+
 ### API reference
 
 #### `extract_spectrum_table(btmsp_file: str) -> dict`
 
-Extract main spectrum table from a `.btmsp` file.
+Extract the main spectrum table from a `.btmsp` file.
 
 **Parameters:**
 
@@ -77,4 +79,4 @@ uv run pytest
 
 ## License
 
-Apache License 2.0. See [LICENSE](LICENSE) for details.
+Apache-2.0. See [LICENSE](LICENSE) for details.
